@@ -1,0 +1,90 @@
+html<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPS Moto</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #1a1a2e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: sans-serif;
+      gap: 30px;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 2em;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 40px;
+    }
+
+    .btn {
+      width: 200px;
+      height: 200px;
+      border: none;
+      border-radius: 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      transition: transform 0.1s, opacity 0.1s;
+      text-decoration: none;
+    }
+
+    .btn:active { transform: scale(0.95); opacity: 0.85; }
+
+    .btn-maps { background: #4285F4; }
+    .btn-waze { background: #05C8F7; color: #1a1a2e; }
+
+    .btn svg { width: 64px; height: 64px; fill: currentColor; }
+
+    .back-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>GPS</h1>
+  <div class="btn-container">
+    <a class="btn btn-maps"
+       href="https://maps.google.com/?force=pwa"
+       target="_self">
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      Google Maps
+    </a>
+    <a class="btn btn-waze"
+       href="https://www.waze.com"
+       target="_self">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+      Waze
+    </a>
+  </div>
+  <button class="back-btn" onclick="history.back()">Volver</button>
+</body>
+</html>

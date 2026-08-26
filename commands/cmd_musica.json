@@ -1,0 +1,36 @@
+{
+  "app": "musica",
+  "descripcion": "Reproductor de musica VLC",
+  "comandos": [
+    {
+      "frases": ["musica", "reproducir", "play"],
+      "accion": "play",
+      "script": "curl -s -u :motovlc2026 'http://localhost:8080/requests/status.json?command=pl_play'"
+    },
+    {
+      "frases": ["pausa", "pausar", "para"],
+      "accion": "pause",
+      "script": "curl -s -u :motovlc2026 'http://localhost:8080/requests/status.json?command=pl_pause'"
+    },
+    {
+      "frases": ["siguiente", "saltar"],
+      "accion": "next",
+      "script": "curl -s -u :motovlc2026 'http://localhost:8080/requests/status.json?command=pl_next'"
+    },
+    {
+      "frases": ["anterior", "volver"],
+      "accion": "prev",
+      "script": "curl -s -u :motovlc2026 'http://localhost:8080/requests/status.json?command=pl_previous'"
+    },
+    {
+      "frases": ["sube volumen", "mas volumen"],
+      "accion": "vol_up",
+      "script": "curl -s -u :motovlc2026 'http://localhost:8080/requests/status.json?command=volume&val=+20'"
+    },
+    {
+      "frases": ["baja volumen", "menos volumen"],
+      "accion": "vol_down",
+      "script": "curl -s -u :motovlc2026 'http://localhost:8080/requests/status.json?command=volume&val=-20'"
+    }
+  ]
+}

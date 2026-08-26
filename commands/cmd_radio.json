@@ -1,0 +1,26 @@
+{
+  "app": "radio",
+  "descripcion": "Radio por internet",
+  "comandos": [
+    {
+      "frases": ["pon la radio", "abrir radio", "radio"],
+      "accion": "radio_play",
+      "script": "echo '{\"command\": [\"loadfile\", \"https://rtvelivestream.rtve.es/rtvesec/rne/rne_r1_main.m3u8\"]}' | socat - /tmp/mpvsocket"
+    },
+    {
+      "frases": ["pon la cope", "la cope", "cope"],
+      "accion": "radio_cope",
+      "script": "echo '{\"command\": [\"loadfile\", \"https://flucast09-h-cloud.flumotion.com/cope/net1.mp3\"]}' | socat - /tmp/mpvsocket"
+    },
+    {
+      "frases": ["pon onda cero", "onda cero"],
+      "accion": "radio_onda",
+      "script": "echo '{\"command\": [\"loadfile\", \"https://radio-atres-live.ondacero.es/api/livestream-redirect/OCAAC.aac\"]}' | socat - /tmp/mpvsocket"
+    },
+    {
+      "frases": ["parar radio", "apagar radio", "silencio radio"],
+      "accion": "radio_stop",
+      "script": "echo '{\"command\": [\"stop\"]}' | socat - /tmp/mpvsocket"
+    }
+  ]
+}

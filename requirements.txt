@@ -1,0 +1,32 @@
+# Dependencias Python - TalkAndTrack
+# Instalar con: pip install -r requirements.txt
+
+# Core dependencies
+vosk==0.3.45          # Reconocimiento de voz offline
+sounddevice==0.4.6    # Captura de audio
+pyaudio==0.2.13       # Interfaz PyAudio (puede requerir compilación)
+
+# Utilidades
+requests==2.31.0      # Cliente HTTP para APIs
+python-dotenv==1.0.0  # Manejo de variables de entorno
+
+# Futuras mejoras (remuestreo)
+numpy==1.24.3         # Operaciones numéricas
+scipy==1.11.3         # Procesamiento de señales
+
+# Desarrollo y testing (opcional)
+pytest==7.4.0         # Framework de testing
+black==23.11.0        # Formateador de código
+pylint==3.0.0         # Linter de Python
+pytest-cov==4.1.0     # Coverage de tests
+
+# Notas:
+# - pyaudio puede requerir: sudo apt install -y portaudio19-dev
+# - Para usar remuestreo: numpy y scipy
+# - Para desarrollo: pytest, black, pylint
+#
+# Instalar solo core:
+#   pip install -r requirements.txt --no-deps (especificar numpy/scipy)
+#
+# Instalar todo (core + dev):
+#   pip install -r requirements.txt

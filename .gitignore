@@ -1,0 +1,64 @@
+# Entorno virtual Python
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Modelo de voz Vosk (muy grande)
+model-es/
+*.zip
+
+# Logs
+*.log
+voice.log
+
+# Configuración local
+config.local.json
+
+# Música personal
+Musica/
+*.mp3
+*.flac
+*.ogg
+*.wav
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+.directory
+
+# Systemd temporal
+*.service~
+
+# Test files
+test.wav
+test_audio.wav
+
+# Credenciales (nunca commitear)
+.env
+secrets.json
+password.txt
+
+# Archivos temporales
+*.tmp
+*.temp
+/tmp/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Socket de mpv (se crea en runtime)
+/tmp/mpvsocket
+

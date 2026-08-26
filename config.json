@@ -1,0 +1,10 @@
+{
+  "wakeword": "hola",
+  "model_path": "/home/jesus/moto-voice/model-es",
+  "commands_dir": "/home/jesus/moto-voice/commands",
+  "audio_device": 1,
+  "confidence_threshold": 0.7,
+  "response_voice": true,
+  "response_voice_cmd": "espeak-ng -v es",
+  "log_file": "/home/jesus/moto-voice/voice.log"
+}

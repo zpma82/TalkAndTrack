@@ -1,0 +1,31 @@
+{
+  "app": "sistema",
+  "descripcion": "Comandos del sistema",
+  "comandos": [
+    {
+      "frases": ["apagar", "apaga"],
+      "accion": "shutdown",
+      "script": "sudo shutdown -h now"
+    },
+    {
+      "frases": ["reiniciar", "reinicia"],
+      "accion": "reboot",
+      "script": "sudo reboot"
+    },
+    {
+      "frases": ["hora", "que hora"],
+      "accion": "hora",
+      "script": "espeak-ng -v es \"$(date +'Son las %H y %M minutos')\""
+    },
+    {
+      "frases": ["volumen arriba", "sube sistema"],
+      "accion": "vol_sys_up",
+      "script": "amixer set Master 10%+"
+    },
+    {
+      "frases": ["volumen abajo", "baja sistema"],
+      "accion": "vol_sys_down",
+      "script": "amixer set Master 10%-"
+    }
+  ]
+}

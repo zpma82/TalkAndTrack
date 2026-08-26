@@ -1,0 +1,21 @@
+{
+  "app": "gps",
+  "descripcion": "Navegacion GPS",
+  "comandos": [
+    {
+      "frases": ["mapas", "google maps"],
+      "accion": "open_maps",
+      "script": "pkill firefox 2>/dev/null; sleep 1; firefox --kiosk 'https://maps.google.com/?force=pwa' &"
+    },
+    {
+      "frases": ["waze"],
+      "accion": "open_waze",
+      "script": "pkill firefox 2>/dev/null; sleep 1; firefox --kiosk 'https://www.waze.com/ul' &"
+    },
+    {
+      "frases": ["cierra mapas", "cierra gps"],
+      "accion": "close_gps",
+      "script": "pkill firefox 2>/dev/null"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+#EXTM3U
+#EXTINF:-1,Los 40 Classic
+https://27783.live.streamtheworld.com/LOS40_CLASSIC.mp3
+#EXTINF:-1,Rock FM
+https://rockfm-cope-rrcast.flumotion.com/cope/rockfm-low.mp3
+#EXTINF:-1,Cadena100
+https://server8.emitironline.com:18196/stream
+#EXTINF:-1,RNE Radio Nacional
+https://rtvelivestream.rtve.es/rtvesec/rne/rne_r1_main.m3u8
+#EXTINF:-1,Cadena SER	
+https://22543.live.streamtheworld.com/CADENASER.mp3		
+#EXTINF:-1,Los40
+https://22653.live.streamtheworld.com/LOS40.mp3	
+		#EXTINF:-1,Europa FM
+#		https://22893.live.streamtheworld.com/EUROPA_FM.mp3
+https://25643.live.streamtheworld.com/EFMAAC.aac?ttag=program%253Amarta-nogales-en-europa-fm
